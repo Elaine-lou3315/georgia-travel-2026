@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": false,
+      "itinerary": true,
+      "todo": true,
+      "driving": true,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "georgia-2026",
+    "title": "格鲁吉亚自驾徒步之旅",
+    "language": "zh-CN",
+    "assets": {}
+  },
+  "trip": {
+    "status": "ready",
+    "startDate": "2026-09-24",
+    "endDate": "2026-10-04",
+    "dayCount": 11,
+    "nightCountAway": 10,
+    "countries": ["格鲁吉亚"],
+    "primaryDestinationCountries": ["格鲁吉亚"],
+    "citiesAndAreas": ["第比利斯", "卡兹别克", "库塔伊西", "梅斯蒂亚", "乌树故里", "西格纳吉"],
+    "routeSummary": "第比利斯→卡兹别克→库塔伊西→梅斯蒂亚→乌树故里→第比利斯→西格纳吉",
+    "groupSize": 4
+  },
+  "flightJourneys": [
+    {
+      "id": "outbound",
+      "label": "去程",
+      "date": "2026-09-24",
+      "flights": [
+        {
+          "airline": "Emirates",
+          "airlineCode": "EK",
+          "flightNumber": "EK2200",
+          "from": { "code": "HGH", "city": "杭州", "terminal": "" },
+          "to": { "code": "DXB", "city": "迪拜", "terminal": "" },
+          "duration": "8h 0m"
+        },
+        {
+          "airline": "Emirates",
+          "airlineCode": "EK",
+          "flightNumber": "EK2200",
+          "from": { "code": "DXB", "city": "迪拜", "terminal": "" },
+          "to": { "code": "TBS", "city": "第比利斯", "terminal": "" },
+          "arrivalTime": "15:32",
+          "duration": "3h 0m"
+        }
+      ],
+      "layover": "7h 40m"
+    },
+    {
+      "id": "return",
+      "label": "返程",
+      "date": "2026-10-04",
+      "flights": [
+        {
+          "airline": "Emirates",
+          "airlineCode": "EK",
+          "flightNumber": "EK2201",
+          "from": { "code": "TBS", "city": "第比利斯", "terminal": "" },
+          "departureTime": "16:35",
+          "to": { "code": "DXB", "city": "迪拜", "terminal": "" },
+          "duration": "3h 0m"
+        },
+        {
+          "airline": "Emirates",
+          "airlineCode": "EK",
+          "flightNumber": "EK2201",
+          "from": { "code": "DXB", "city": "迪拜", "terminal": "" },
+          "to": { "code": "HGH", "city": "杭州", "terminal": "" },
+          "duration": "8h 0m"
+        }
+      ]
+    }
+  ],
+  "flights": [],
+  "accommodations": [
+    { "id": "acc-d1", "name": "Hotel Cordata", "city": "第比利斯", "checkInDay": 1, "nights": 1 },
+    { "id": "acc-d2", "name": "Elinetsa Inn Kazbegi", "city": "卡兹别克", "checkInDay": 2, "nights": 2, "price": "162拉里", "cashOnly": true },
+    { "id": "acc-d4", "name": "库塔伊西住宿", "city": "库塔伊西", "checkInDay": 4, "nights": 1 },
+    { "id": "acc-d5", "name": "梅斯蒂亚住宿", "city": "梅斯蒂亚", "checkInDay": 5, "nights": 2 },
+    { "id": "acc-d7", "name": "Guesthouse NaSHOGOBI", "city": "乌树故里", "checkInDay": 7, "nights": 1, "price": "115拉里", "cashOnly": true },
+    { "id": "acc-d8", "name": "Holiday Inn Express Tbilisi Avlabari", "city": "第比利斯", "checkInDay": 8, "nights": 2, "price": "$100.32", "paid": true }
+  ],
+  "groundTransport": {
+    "rentalCar": {
+      "provider": "待定",
+      "totalCost": "$324",
+      "prepaid": "$64.80",
+      "pickupLocation": "第比利斯",
+      "dropoffLocation": "第比利斯",
+      "pickupDate": "2026-09-25",
+      "dropoffDate": "2026-10-01",
+      "vehicleType": "SUV（推荐）"
+    },
+    "rentalChecklist": [
+      "必须携带驾照公证件，格鲁吉亚交警不认可国际小白本",
+      "务必购买车辆全险",
+      "取车时全车录像，仔细记录车身划痕磕碰，规避还车纠纷",
+      "山区路段优先SUV"
+    ],
+    "drivingNotes": [
+      {
+        "id": "dn-1",
+        "title": "导航",
+        "body": "谷歌地图 + Yandex Maps 双备份；山区部分地区无手机信号，提前下载离线地图。"
+      },
+      {
+        "id": "dn-2",
+        "title": "行车安全",
+        "body": "山路弯道极多，牛羊经常横穿公路，减速避让；坚决不夜间行驶山区公路。"
+      },
+      {
+        "id": "dn-3",
+        "title": "山区行车",
+        "body": "北部军事公路弯多路窄，注意车速和会车；卡兹别克段可能有碎石路；加油站较稀疏，见站即加。"
+      }
+    ],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [
+      { "id": "leg-d2", "day": 2, "from": "第比利斯", "to": "卡兹别克", "duration": "3.5–4.5h", "route": "高加索军事公路" },
+      { "id": "leg-d4", "day": 4, "from": "卡兹别克", "to": "库塔伊西", "duration": "6h", "route": "经哥里、乌普利斯赫" },
+      { "id": "leg-d5", "day": 5, "from": "库塔伊西", "to": "梅斯蒂亚", "duration": "6h", "route": "进入斯瓦涅季山区" },
+      { "id": "leg-d7", "day": 7, "from": "梅斯蒂亚", "to": "乌树故里", "duration": "2h+", "route": "经 chali bridge，沿途4座古村落" },
+      { "id": "leg-d8", "day": 8, "from": "乌树故里", "to": "第比利斯", "duration": "8–9h", "route": "约460km" }
+    ],
+    "publicTransitAndRail": [
+      { "id": "pt-d1", "day": 1, "type": "taxi", "description": "Bolt 打车，第比利斯机场→老城，约30min。建议绑定VISA信用卡。" }
+    ]
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-09-24",
+      "weekday": "周四",
+      "title": "杭州 → 第比利斯",
+      "locations": "第比利斯",
+      "summary": "EK2200 迪拜中转 · Bolt打车到老城",
+      "schedule": [
+        { "id": "d1s1", "time": "飞行", "type": "flight", "text": "杭州 → 迪拜（飞行 8h）" },
+        { "id": "d1s2", "time": "中转", "type": "transfer", "text": "迪拜中转（7h 40m）" },
+        { "id": "d1s3", "time": "飞行", "type": "flight", "text": "迪拜 → 第比利斯（飞行 3h）" },
+        { "id": "d1s4", "time": "15:32", "type": "flight", "text": "抵达第比利斯国际机场" },
+        { "id": "d1s5", "time": "打车", "type": "transfer", "text": "Bolt 打车到老城民宿（约 30min）" },
+        { "id": "d1s6", "time": "下午", "type": "rest", "text": "落地入境，前往老城民宿休整，倒时差" },
+        { "id": "d1s7", "time": "次日", "type": "note", "text": "办理驾照公证（办公时间 9:00–18:30，山区自驾必备文件）" }
+      ],
+      "tips": ["Bolt 打车建议绑定 VISA 信用卡，防止司机现场临时加价"],
+      "foods": [
+        { "name": "阿贾鲁里船型奶酪饼 Khachapuri", "description": "格鲁吉亚国菜，流心蛋黄+融化奶酪，撕饼蘸蛋黄奶酪吃" },
+        { "name": "大水饺 Khinkali", "description": "牛羊肉馅，先吸里面汤汁，不吃底部硬面皮，不要咬破底部" },
+        { "name": "Lemonati 本地柠檬汽水", "description": "格鲁吉亚本地汽水，解腻" }
+      ],
+      "accommodation": "Hotel Cordata · 第比利斯"
+    },
+    {
+      "day": 2,
+      "date": "2026-09-25",
+      "weekday": "周五",
+      "title": "第比利斯 → 卡兹别克",
+      "locations": "姆茨赫塔、阿纳努里、卡兹别克",
+      "summary": "自驾 3.5–4.5h · 高加索军事公路北上",
+      "schedule": [
+        { "id": "d2s1", "time": "上午", "type": "attraction", "text": "姆茨赫塔（世界文化遗产）：生命之柱大教堂（Svetitskhoveli）、季瓦里修道院（Jvari）", "description": "格鲁吉亚古都，东正教圣地，千年古老教堂，进入教堂保持安静" },
+        { "id": "d2s2", "time": "沿途", "type": "attraction", "text": "阿纳努里要塞（Ananuri）", "description": "湖泊+古堡同框，《孤独星球》经典封面机位，停车拍照即可" },
+        { "id": "d2s3", "time": "沿途", "type": "attraction", "text": "俄格友谊纪念碑", "description": "巨型拱门雕塑，停车俯瞰津瓦利水库全景" },
+        { "id": "d2s4", "time": "下午", "type": "drive", "text": "抵达卡兹别克，入住民宿" },
+        { "id": "d2s5", "time": "下午", "type": "attraction", "text": "Gergeti 圣三一教堂", "description": "卡兹别克标志性雪山教堂，可以坐当地四驱车开上山" },
+        { "id": "d2s6", "time": "傍晚", "type": "attraction", "text": "Rooms 酒店露台", "description": "绝佳观景位，晚上眺望卡兹别克雪山夜景" }
+      ],
+      "tips": ["山区紫外线极强，备好高倍防晒、帽子；参观教堂女性建议备丝巾头巾，部分点位可免费租借"],
+      "foods": [
+        { "name": "Chikhirtma 鸡肉酸奶浓汤", "description": "徒步后暖胃首选" },
+        { "name": "Mtsvadi 炭火烤羊肉", "description": "炭火现烤，外焦多汁" },
+        { "name": "Churchkhela 核桃果肠", "description": "葡萄汁凝固包裹核桃，徒步能量棒" }
+      ],
+      "accommodation": "Elinetsa Inn Kazbegi · 162拉里（仅现金）"
+    },
+    {
+      "day": 3,
+      "date": "2026-09-26",
+      "weekday": "周六",
+      "title": "卡兹别克 · Juta 山谷长线徒步",
+      "locations": "Juta 村",
+      "summary": "14km · 爬升+1050m · 最高3340m",
+      "schedule": [
+        { "id": "d3s1", "time": "车程", "type": "drive", "text": "卡兹别克 ↔ Juta 村，单程 40–50min" },
+        { "id": "d3s2", "time": "全天", "type": "hike", "text": "Juta 村 → Chaukhi 高山湖 → Chaukhi Pass 3340m 乔基山口 → 原路返回", "description": "格鲁吉亚经典徒步路线；全程 14km，累计爬升 1050m。沿途高山草甸、湛蓝高山湖，搭配锯齿状岩石山峰，风景震撼" }
+      ],
+      "tips": ["高加索山区午后极易突发阵雨，随身带雨衣；手机证件装入防水袋；穿高帮防水徒步鞋，携带充足饮用水"],
+      "foods": [
+        { "name": "路餐：Churchkhela 果肠+坚果", "description": "徒步便携能量补给" },
+        { "name": "晚餐：Chashushuli 格鲁吉亚炖牛肉", "description": "汤汁浓郁入味" }
+      ],
+      "accommodation": "Elinetsa Inn Kazbegi · 卡兹别克"
+    },
+    {
+      "day": 4,
+      "date": "2026-09-27",
+      "weekday": "周日",
+      "title": "卡兹别克 → 库塔伊西",
+      "locations": "哥里、乌普利斯赫、库塔伊西",
+      "summary": "移动日 · 自驾约 6h · 沿途游览",
+      "schedule": [
+        { "id": "d4s1", "time": "途中", "type": "attraction", "text": "哥里 · 斯大林博物馆（参观约 1h）", "description": "斯大林出生地，馆藏大量历史照片与物件" },
+        { "id": "d4s2", "time": "途中", "type": "attraction", "text": "乌普利斯赫石窟古城（Uplistsikhe）", "description": "千年岩石开凿洞穴城市，洞穴宫殿、礼拜堂，非常有特色，游览 1.5h，门票约 15 拉里" },
+        { "id": "d4s3", "time": "下午", "type": "attraction", "text": "库塔伊西老城 · 巴格拉特大教堂（世界文化遗产）", "description": "西格鲁吉亚古都地标，古老拜占庭风格大教堂" }
+      ],
+      "tips": ["山区谷歌地图预估时间偏短，预留充足行车时间，尽量不要开夜山路"],
+      "foods": [
+        { "name": "Megruli Khachapuri 梅格列尔奶酪饼", "description": "双层奶酪，没有流心蛋黄" },
+        { "name": "Badrijani Nigozit 茄子核桃卷", "description": "经典冷盘前菜，茄子裹核桃香料酱" }
+      ],
+      "accommodation": "库塔伊西"
+    },
+    {
+      "day": 5,
+      "date": "2026-09-28",
+      "weekday": "周一",
+      "title": "库塔伊西 → 梅斯蒂亚",
+      "locations": "梅斯蒂亚",
+      "summary": "移动日 · 自驾约 6h · 进入斯瓦涅季",
+      "schedule": [
+        { "id": "d5s1", "time": "全天", "type": "drive", "text": "一路向西进入斯瓦涅季山区，沿途慢慢欣赏雪山、古石塔村落风光，看到好看的地方可以随时停车拍照" },
+        { "id": "d5s2", "time": "抵达", "type": "rest", "text": "梅斯蒂亚小镇超市采购：徒步零食、饮用水、简易补给" }
+      ],
+      "tips": ["梅斯蒂亚很多民宿只收现金，提前备好拉里"],
+      "foods": [
+        { "name": "Svaneti Khachapuri 斯瓦涅季土豆奶酪馅饼", "description": "山区独有的风味" },
+        { "name": "Svanuri Chashushuli 斯瓦涅季风味炖肉", "description": "当地特色炖菜" }
+      ],
+      "accommodation": "梅斯蒂亚"
+    },
+    {
+      "day": 6,
+      "date": "2026-09-29",
+      "weekday": "周二",
+      "title": "梅斯蒂亚 · Koruldi 冰湖徒步",
+      "locations": "Koruldi 科鲁迪湖",
+      "summary": "13km · 爬升+600m · 最高2740m · 6–8h",
+      "schedule": [
+        { "id": "d6s1", "time": "车程", "type": "drive", "text": "梅斯蒂亚 ↔ Cross 十字架，单程 30–35min；徒步起点需要单独租当地四驱车抵达" },
+        { "id": "d6s2", "time": "全天", "type": "hike", "text": "Koruldi 科鲁迪湖徒步往返", "description": "梅斯蒂亚招牌徒步线；全程往返 13km，爬升 600m，最高海拔 2740m。高山湖泊群，直面高加索雪山群峰；全程 6–8h" }
+      ],
+      "tips": ["山区气温偏低，携带薄冲锋衣；建议早出发，避开午后云雾遮挡雪山"],
+      "foods": [
+        { "name": "路餐：果肠+坚果", "description": "徒步便携" },
+        { "name": "返程：Matsoni 格鲁吉亚本土酸奶", "description": "缓解徒步肌肉酸痛" }
+      ],
+      "accommodation": "梅斯蒂亚"
+    },
+    {
+      "day": 7,
+      "date": "2026-09-30",
+      "weekday": "周三",
+      "title": "梅斯蒂亚 → 乌树故里",
+      "locations": "Chalaadi冰川、乌树故里",
+      "summary": "冰川徒步 + 移动 · 沿途4座古村落",
+      "schedule": [
+        { "id": "d7s1", "time": "上午", "type": "hike", "text": "Chalaadi 查拉迪冰川徒步（2h）", "description": "轻松短途徒步，可以近距离走到冰川末端，冰碛石、冰裂缝景观" },
+        { "id": "d7s2", "time": "下午", "type": "drive", "text": "梅斯蒂亚自驾前往乌树故里（经 chali bridge）", "description": "沿途经过 4 座斯瓦涅季古村落，雪山+中世纪石塔景观，随停拍照" },
+        { "id": "d7s3", "time": "下午", "type": "attraction", "text": "Lamaria 教堂", "description": "乌树故里，欧洲海拔最高古村落，遍布千年石塔" },
+        { "id": "d7s4", "time": "下午", "type": "attraction", "text": "什哈拉冰川（Shkhara）观景台", "description": "什哈拉山是格鲁吉亚最高峰" }
+      ],
+      "tips": ["村内道路狭窄，会车小心；给当地居民拍照务必征得同意；教堂内保持安静"],
+      "foods": [
+        { "name": "斯瓦涅季风干火腿 + 本地野花蜂蜜", "description": "山区特色搭配" },
+        { "name": "热蘑菇浓汤", "description": "山区暖胃餐" }
+      ],
+      "accommodation": "Guesthouse NaSHOGOBI · 115拉里（现金）"
+    },
+    {
+      "day": 8,
+      "date": "2026-10-01",
+      "weekday": "周四",
+      "title": "乌树故里 → 第比利斯",
+      "locations": "第比利斯",
+      "summary": "移动日 · 约460km · 8–9h",
+      "schedule": [
+        { "id": "d8s1", "time": "全天", "type": "drive", "text": "超长距离赶路，早点出发，中途小镇停靠补给" }
+      ],
+      "tips": ["山路弯道多，轮流开车，杜绝疲劳驾驶；山区尽量避开夜路"],
+      "foods": [
+        { "name": "路餐：果肠、奶酪、面包", "description": "长途车上简餐" },
+        { "name": "晚餐：格鲁吉亚特色大餐 + 古法陶罐红酒 Qvevri", "description": "回到第比利斯好好吃一顿" }
+      ],
+      "accommodation": "第比利斯"
+    },
+    {
+      "day": 9,
+      "date": "2026-10-02",
+      "weekday": "周五",
+      "title": "西格纳吉红酒小镇一日游",
+      "locations": "西格纳吉",
+      "summary": "Klook 一日往返团",
+      "schedule": [
+        { "id": "d9s1", "time": "全天", "type": "attraction", "text": "Bodbe 圣妮诺女修道院", "description": "格鲁吉亚重要圣地", "warning": "⚠️ 硬性要求：女生必须头巾+长裙，门口可以租借，遵守宗教礼仪" },
+        { "id": "d9s2", "time": "全天", "type": "attraction", "text": "西格纳吉红酒小镇", "description": "红墙童话小镇，格鲁吉亚红酒发源地，卡卡赫蒂陶罐红酒产区" }
+      ],
+      "tips": ["小镇游客较多，修道院内禁止大声喧哗"],
+      "foods": [
+        { "name": "古法陶罐红酒 Qvevri", "description": "葡萄酒发源地特色酒款" },
+        { "name": "烤蘑菇 + 牛肉沙拉", "description": "搭配红酒的当地菜" }
+      ],
+      "accommodation": "Holiday Inn Express Tbilisi Avlabari · $100.32（已付）"
+    },
+    {
+      "day": 10,
+      "date": "2026-10-03",
+      "weekday": "周六",
+      "title": "第比利斯 · 博物馆+美术馆",
+      "locations": "第比利斯",
+      "summary": "市内 Bolt 打车",
+      "schedule": [
+        { "id": "d10s1", "time": "10:00", "type": "attraction", "text": "西蒙·贾纳西亚格鲁吉亚博物馆", "description": "格鲁吉亚国家历史博物馆，藏大量本土文物", "hours": "10:00–18:00" },
+        { "id": "d10s2", "time": "下午", "type": "attraction", "text": "乔治亚国家美术馆（蓝画廊）", "description": "本土艺术画作", "hours": "10:00–18:00" },
+        { "id": "d10s3", "time": "下午", "type": "attraction", "text": "乔治亚美术馆（私人馆）", "description": "私人收藏美术馆", "hours": "10:00–19:00" }
+      ],
+      "tips": ["博物馆+美术馆可购买联票，节省门票费用"],
+      "foods": [
+        { "name": "老城小酒馆品鉴陶罐红酒", "description": "第比利斯老城氛围" },
+        { "name": "甜品 Pelamushi 葡萄冻", "description": "浓郁葡萄果香" }
+      ],
+      "accommodation": "Holiday Inn Express Tbilisi Avlabari · 第比利斯"
+    },
+    {
+      "day": 11,
+      "date": "2026-10-04",
+      "weekday": "周日",
+      "title": "第比利斯 → 返程",
+      "locations": "第比利斯",
+      "summary": "EK2201 16:35 起飞",
+      "schedule": [
+        { "id": "d11s1", "time": "14:00", "type": "note", "text": "建议到达第比利斯机场（市区到机场车程约 30min）" },
+        { "id": "d11s2", "time": "16:35", "type": "flight", "text": "EK2201 起飞 · 第比利斯 → 迪拜 → 杭州" }
+      ],
+      "tips": [],
+      "foods": [
+        { "name": "出发前打包 Khinkali 大水饺", "description": "作为路上简餐" }
+      ],
+      "accommodation": "无（返程日）"
+    }
+  ],
+  "places": [],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": []
+  },
+  "preTrip": {
+    "packingItems": [
+      "办理驾照公证件（9:00–18:30）",
+      "兑换格鲁吉亚拉里（第比利斯老城换汇店）",
+      "预订 Magti 电话卡或落地购买",
+      "准备高倍防晒霜、帽子",
+      "准备冲锋衣 + 保暖层",
+      "准备高帮防水徒步鞋",
+      "准备雨衣 + 防水袋",
+      "准备教堂参观用丝巾（女性）",
+      "下载离线地图（Google Maps + Maps.me）",
+      "确认租车全险 + 取车录像计划"
+    ],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": ""
+  },
+  "generalTips": [
+    { "icon": "⛪", "title": "教堂着装", "text": "参观着装保守：不露肩、不穿短裤短裙，随身备丝巾" },
+    { "icon": "🧥", "title": "山区温差", "text": "昼夜温差巨大，秋季白天暖和，徒步务必携带冲锋衣+保暖层" },
+    { "icon": "🌦️", "title": "天气变化", "text": "山区天气变化极快，每日徒步前咨询民宿老板实时天气与路况" },
+    { "icon": "📸", "title": "拍照礼仪", "text": "当地人大多友善，拍摄本地人照片前一定要征得对方同意" },
+    { "icon": "💱", "title": "换汇", "text": "建议在第比利斯老城换汇店兑换拉里，汇率更好；山区换汇点很少" },
+    { "icon": "💵", "title": "现金", "text": "山区很多民宿、小店只收现金，提前兑换格鲁吉亚拉里" }
+  ],
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": ["flight", "note", "rest"],
+      "selfNavigationTypes": ["drive", "return", "transfer", "check-in", "check-out", "restaurant", "attraction", "walk", "hike"]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "places": [],
+    "routes": [],
+    "dailyRoutes": []
+  }
+}
