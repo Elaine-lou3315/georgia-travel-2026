@@ -1,0 +1,1 @@
+# georgia-travel-2026
