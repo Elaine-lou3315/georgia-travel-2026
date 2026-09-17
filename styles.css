@@ -17,7 +17,6 @@
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--paper); }
 body {
@@ -31,18 +30,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
-
 button, a { touch-action: manipulation; }
 button { font: inherit; color: inherit; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }
-
 .skip-link {
   position: fixed; left: 12px; top: -80px; z-index: 100;
   padding: 12px 16px; background: var(--ink); color: white; border-radius: 10px;
 }
 .skip-link:focus { top: calc(12px + var(--safe-top)); }
-
 .topbar {
   position: sticky; top: 0; z-index: 20;
   height: calc(48px + var(--safe-top));
@@ -61,7 +57,6 @@ img { display: block; max-width: 100%; }
   color: var(--muted); text-decoration: none; font-size: 12px; font-weight: 650;
 }
 .primary-navigation a:active { color: var(--lake); }
-
 main { overflow: hidden; }
 .hero, .section, .footer { width: min(100%, var(--content)); margin-inline: auto; }
 .hero { padding: 32px 18px 24px; min-height: 188px; display: flex; flex-direction: column; justify-content: flex-end; }
@@ -70,14 +65,11 @@ main { overflow: hidden; }
 }
 .hero h1 { margin: 0; max-width: 620px; font-size: clamp(38px, 12vw, 64px); line-height: 0.98; letter-spacing: -0.06em; font-weight: 820; }
 .hero__date { margin: 14px 0 0; font: 650 14px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.03em; }
-
 .section { padding: 44px 18px; scroll-margin-top: 48px; }
 .flights-section { padding-top: 24px; padding-bottom: 34px; }
 .section-heading { margin-bottom: 16px; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; }
 .section-heading h2 { margin: 0; font-size: 30px; line-height: 1; letter-spacing: -0.04em; }
 .section-index, .soft-label { margin: 0; color: var(--muted); font: 700 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.08em; }
-
-/* === INFO BANNER === */
 .info-section { padding-top: 24px; padding-bottom: 24px; }
 .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .info-card {
@@ -95,8 +87,6 @@ main { overflow: hidden; }
 .recruit-banner__icon { font-size: 28px; flex: 0 0 auto; }
 .recruit-banner strong { display: block; font-size: 15px; font-weight: 760; }
 .recruit-banner span { display: block; margin-top: 4px; font-size: 12px; color: #d6ebee; line-height: 1.5; }
-
-/* === FLIGHTS === */
 .flight-carousel {
   display: flex; gap: 14px; overflow-x: auto;
   scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain;
@@ -128,12 +118,9 @@ main { overflow: hidden; }
 .flight-countdown { text-align: left; }
 .flight-countdown span { display: block; color: #a9c3c8; font-size: 11px; }
 .flight-countdown strong { display: block; margin-top: 5px; color: #fff; font: 760 clamp(22px, 7vw, 30px)/1.1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
-
 .carousel-dots { display: flex; justify-content: center; gap: 7px; }
 .carousel-dot { width: 6px; height: 6px; border: 0; padding: 0; border-radius: 50%; background: #aebbb8; transition: width .2s ease; }
 .carousel-dot.is-active { width: 22px; border-radius: 99px; background: var(--lake); }
-
-/* === TIMELINE / ITINERARY === */
 .timeline { position: relative; }
 .timeline::before { content: ""; position: absolute; left: 18px; top: 22px; bottom: 26px; width: 1px; background: var(--line); }
 .day-card { position: relative; padding-left: 48px; }
@@ -148,8 +135,6 @@ main { overflow: hidden; }
 .day-toggle[aria-expanded="true"] .day-chevron { transform: rotate(45deg); }
 .day-detail { padding: 18px 0 26px; }
 .day-detail[hidden] { display: none; }
-
-/* === DAY DETAIL CONTENT === */
 .detail-section { margin-bottom: 14px; }
 .detail-h4 { margin: 0 0 10px; font-size: 13px; font-weight: 760; color: var(--ink); letter-spacing: .02em; }
 .schedule { margin: 0; padding: 0; list-style: none; }
@@ -163,7 +148,6 @@ main { overflow: hidden; }
 .spot-desc { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .spot-warn { display: block; margin-top: 4px; color: var(--warning); font-size: 12px; line-height: 1.6; font-weight: 600; }
 .spot-time { display: inline-block; margin-top: 4px; color: var(--lake); font: 700 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
-
 .detail-tip {
   margin: 12px 0; padding: 12px 14px; border-left: 3px solid var(--terracotta);
   background: rgba(182,92,58,.06); border-radius: 0 8px 8px 0;
@@ -171,7 +155,6 @@ main { overflow: hidden; }
   font-size: 12px; line-height: 1.6; color: #6d4c3e;
 }
 .tip-icon { flex: 0 0 auto; }
-
 .detail-food { margin: 14px 0; }
 .food-list { display: grid; gap: 10px; }
 .food-item {
@@ -180,12 +163,9 @@ main { overflow: hidden; }
 }
 .food-name { font-size: 13px; font-weight: 740; color: var(--ink); }
 .food-desc { margin-top: 4px; font-size: 12px; color: var(--muted); line-height: 1.55; }
-
 .detail-note { margin: 8px 0 0; padding: 12px 14px; border-left: 2px solid var(--terracotta); background: rgba(182,92,58,.06); color: #6d4c3e; font-size: 12px; line-height: 1.6; }
 .costs { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
 .cost-tag { padding: 7px 9px; border-radius: 8px; background: #e8eeeb; color: #53615e; font-size: 11px; font-weight: 600; }
-
-/* === DRIVING === */
 .rental-panel { overflow: hidden; border-radius: var(--radius-lg); background: var(--ink); color: white; box-shadow: var(--shadow); }
 .rental-countdown { padding: 24px; background: var(--lake); }
 .rental-countdown span { display: block; color: #d6ebee; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
@@ -201,7 +181,6 @@ main { overflow: hidden; }
 .rental-stop span { display: block; margin-top: 4px; color: #abc0c4; font-size: 12px; line-height: 1.5; }
 .rental-price { margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.14); display: flex; justify-content: space-between; color: #abc0c4; font-size: 12px; }
 .rental-price strong { color: white; font: 720 15px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
-
 .accordion-stack { margin-top: 14px; display: grid; gap: 10px; }
 .accordion { border: 1px solid var(--line); border-radius: var(--radius-md); background: rgba(255,255,255,.72); overflow: hidden; }
 .accordion summary { min-height: 54px; padding: 16px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 14px; font-weight: 740; }
@@ -211,8 +190,6 @@ main { overflow: hidden; }
 .accordion ul { margin: 0; padding: 0 18px 18px 38px; color: #47575b; }
 .accordion li { margin: 9px 0; font-size: 12px; line-height: 1.65; }
 .accordion li strong { color: var(--ink); }
-
-/* === TIPS === */
 .tips-section { padding-top: 34px; }
 .tips-grid { display: grid; gap: 10px; }
 .tip-card {
@@ -223,8 +200,6 @@ main { overflow: hidden; }
 .tip-card__icon { font-size: 24px; line-height: 1; }
 .tip-card__title { font-size: 14px; font-weight: 740; }
 .tip-card__text { margin-top: 4px; font-size: 12px; color: var(--muted); line-height: 1.6; }
-
-/* === TODO === */
 .todo-form { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
 .todo-form input { min-width: 0; min-height: 48px; padding: 0 14px; border: 1px solid var(--line); border-radius: 13px; background: rgba(255,255,255,.8); font: inherit; font-size: 13px; outline: none; }
 .todo-form input:focus { border-color: var(--lake); box-shadow: 0 0 0 3px rgba(40,123,144,.1); }
@@ -239,8 +214,6 @@ main { overflow: hidden; }
 .todo-item.is-complete .todo-text { color: #87928f; text-decoration: line-through; }
 .todo-delete { min-width: 44px; min-height: 44px; padding: 0; border: 0; color: #9a7062; background: transparent; cursor: pointer; font-size: 10px; }
 .todo-empty { margin: 0; padding: 22px 0 8px; color: var(--muted); text-align: center; font-size: 11px; }
-
-/* === LEDGER (记账) === */
 [data-site-view][hidden] { display: none !important; }
 .ledger-view {
   min-height: calc(100vh - 48px);
@@ -341,14 +314,10 @@ body[data-active-view="ledger"] { background: #fafbf9; }
   border: 0; color: #aa5d4d; background: transparent; cursor: pointer; font-size: 10px;
 }
 .ledger-empty { padding: 22px 0 8px; color: var(--muted); text-align: center; font-size: 11px; }
-
-/* === FOOTER === */
 .footer { padding: 46px 20px calc(50px + var(--safe-bottom)); border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
 .footer p { margin: 0; font-weight: 750; letter-spacing: .08em; }
 .footer a { min-height: 44px; margin-top: -15px; display: flex; align-items: center; text-decoration: none; }
-
 :focus-visible { outline: 3px solid rgba(40,123,144,.45); outline-offset: 3px; }
-
 @media (min-width: 700px) {
   .topbar { padding-inline: max(24px, calc((100vw - var(--content)) / 2)); }
   .hero { min-height: 260px; padding-inline: 0; }
@@ -358,7 +327,6 @@ body[data-active-view="ledger"] { background: #fafbf9; }
   .info-grid { grid-template-columns: 1fr 1fr 1fr 1fr; }
   .tips-grid { grid-template-columns: 1fr 1fr; }
 }
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
