@@ -39,23 +39,8 @@
       "label": "去程",
       "date": "2026-09-24",
       "flights": [
-        {
-          "airline": "Emirates",
-          "airlineCode": "EK",
-          "flightNumber": "EK2200",
-          "from": { "code": "HGH", "city": "杭州", "terminal": "" },
-          "to": { "code": "DXB", "city": "迪拜", "terminal": "" },
-          "duration": "8h 0m"
-        },
-        {
-          "airline": "Emirates",
-          "airlineCode": "EK",
-          "flightNumber": "EK2200",
-          "from": { "code": "DXB", "city": "迪拜", "terminal": "" },
-          "to": { "code": "TBS", "city": "第比利斯", "terminal": "" },
-          "arrivalTime": "15:32",
-          "duration": "3h 0m"
-        }
+        { "airline": "Emirates", "airlineCode": "EK", "flightNumber": "EK2200", "from": { "code": "HGH", "city": "杭州" }, "to": { "code": "DXB", "city": "迪拜" }, "duration": "8h 0m" },
+        { "airline": "Emirates", "airlineCode": "EK", "flightNumber": "EK2200", "from": { "code": "DXB", "city": "迪拜" }, "to": { "code": "TBS", "city": "第比利斯" }, "arrivalTime": "15:32", "duration": "3h 0m" }
       ],
       "layover": "7h 40m"
     },
@@ -64,23 +49,8 @@
       "label": "返程",
       "date": "2026-10-04",
       "flights": [
-        {
-          "airline": "Emirates",
-          "airlineCode": "EK",
-          "flightNumber": "EK2201",
-          "from": { "code": "TBS", "city": "第比利斯", "terminal": "" },
-          "departureTime": "16:35",
-          "to": { "code": "DXB", "city": "迪拜", "terminal": "" },
-          "duration": "3h 0m"
-        },
-        {
-          "airline": "Emirates",
-          "airlineCode": "EK",
-          "flightNumber": "EK2201",
-          "from": { "code": "DXB", "city": "迪拜", "terminal": "" },
-          "to": { "code": "HGH", "city": "杭州", "terminal": "" },
-          "duration": "8h 0m"
-        }
+        { "airline": "Emirates", "airlineCode": "EK", "flightNumber": "EK2201", "from": { "code": "TBS", "city": "第比利斯" }, "departureTime": "16:35", "to": { "code": "DXB", "city": "迪拜" }, "duration": "3h 0m" },
+        { "airline": "Emirates", "airlineCode": "EK", "flightNumber": "EK2201", "from": { "code": "DXB", "city": "迪拜" }, "to": { "code": "HGH", "city": "杭州" }, "duration": "8h 0m" }
       ]
     }
   ],
@@ -111,21 +81,9 @@
       "山区路段优先SUV"
     ],
     "drivingNotes": [
-      {
-        "id": "dn-1",
-        "title": "导航",
-        "body": "谷歌地图 + Yandex Maps 双备份；山区部分地区无手机信号，提前下载离线地图。"
-      },
-      {
-        "id": "dn-2",
-        "title": "行车安全",
-        "body": "山路弯道极多，牛羊经常横穿公路，减速避让；坚决不夜间行驶山区公路。"
-      },
-      {
-        "id": "dn-3",
-        "title": "山区行车",
-        "body": "北部军事公路弯多路窄，注意车速和会车；卡兹别克段可能有碎石路；加油站较稀疏，见站即加。"
-      }
+      { "id": "dn-1", "title": "导航", "body": "谷歌地图 + Yandex Maps 双备份；山区部分地区无手机信号，提前下载离线地图。" },
+      { "id": "dn-2", "title": "行车安全", "body": "山路弯道极多，牛羊经常横穿公路，减速避让；坚决不夜间行驶山区公路。" },
+      { "id": "dn-3", "title": "山区行车", "body": "北部军事公路弯多路窄，注意车速和会车；卡兹别克段可能有碎石路；加油站较稀疏，见站即加。" }
     ],
     "drivingReferenceLinks": [],
     "plannedRoadLegs": [
@@ -141,12 +99,7 @@
   },
   "days": [
     {
-      "day": 1,
-      "date": "2026-09-24",
-      "weekday": "周四",
-      "title": "杭州 → 第比利斯",
-      "locations": "第比利斯",
-      "summary": "EK2200 迪拜中转 · Bolt打车到老城",
+      "day": 1, "date": "2026-09-24", "weekday": "周四", "title": "杭州 → 第比利斯", "locations": "第比利斯", "summary": "EK2200 迪拜中转 · Bolt打车到老城",
       "schedule": [
         { "id": "d1s1", "time": "飞行", "type": "flight", "text": "杭州 → 迪拜（飞行 8h）" },
         { "id": "d1s2", "time": "中转", "type": "transfer", "text": "迪拜中转（7h 40m）" },
@@ -165,12 +118,7 @@
       "accommodation": "Hotel Cordata · 第比利斯"
     },
     {
-      "day": 2,
-      "date": "2026-09-25",
-      "weekday": "周五",
-      "title": "第比利斯 → 卡兹别克",
-      "locations": "姆茨赫塔、阿纳努里、卡兹别克",
-      "summary": "自驾 3.5–4.5h · 高加索军事公路北上",
+      "day": 2, "date": "2026-09-25", "weekday": "周五", "title": "第比利斯 → 卡兹别克", "locations": "姆茨赫塔、阿纳努里、卡兹别克", "summary": "自驾 3.5–4.5h · 高加索军事公路北上",
       "schedule": [
         { "id": "d2s1", "time": "上午", "type": "attraction", "text": "姆茨赫塔（世界文化遗产）：生命之柱大教堂（Svetitskhoveli）、季瓦里修道院（Jvari）", "description": "格鲁吉亚古都，东正教圣地，千年古老教堂，进入教堂保持安静" },
         { "id": "d2s2", "time": "沿途", "type": "attraction", "text": "阿纳努里要塞（Ananuri）", "description": "湖泊+古堡同框，《孤独星球》经典封面机位，停车拍照即可" },
@@ -188,12 +136,7 @@
       "accommodation": "Elinetsa Inn Kazbegi · 162拉里（仅现金）"
     },
     {
-      "day": 3,
-      "date": "2026-09-26",
-      "weekday": "周六",
-      "title": "卡兹别克 · Juta 山谷长线徒步",
-      "locations": "Juta 村",
-      "summary": "14km · 爬升+1050m · 最高3340m",
+      "day": 3, "date": "2026-09-26", "weekday": "周六", "title": "卡兹别克 · Juta 山谷长线徒步", "locations": "Juta 村", "summary": "14km · 爬升+1050m · 最高3340m",
       "schedule": [
         { "id": "d3s1", "time": "车程", "type": "drive", "text": "卡兹别克 ↔ Juta 村，单程 40–50min" },
         { "id": "d3s2", "time": "全天", "type": "hike", "text": "Juta 村 → Chaukhi 高山湖 → Chaukhi Pass 3340m 乔基山口 → 原路返回", "description": "格鲁吉亚经典徒步路线；全程 14km，累计爬升 1050m。沿途高山草甸、湛蓝高山湖，搭配锯齿状岩石山峰，风景震撼" }
@@ -206,12 +149,7 @@
       "accommodation": "Elinetsa Inn Kazbegi · 卡兹别克"
     },
     {
-      "day": 4,
-      "date": "2026-09-27",
-      "weekday": "周日",
-      "title": "卡兹别克 → 库塔伊西",
-      "locations": "哥里、乌普利斯赫、库塔伊西",
-      "summary": "移动日 · 自驾约 6h · 沿途游览",
+      "day": 4, "date": "2026-09-27", "weekday": "周日", "title": "卡兹别克 → 库塔伊西", "locations": "哥里、乌普利斯赫、库塔伊西", "summary": "移动日 · 自驾约 6h · 沿途游览",
       "schedule": [
         { "id": "d4s1", "time": "途中", "type": "attraction", "text": "哥里 · 斯大林博物馆（参观约 1h）", "description": "斯大林出生地，馆藏大量历史照片与物件" },
         { "id": "d4s2", "time": "途中", "type": "attraction", "text": "乌普利斯赫石窟古城（Uplistsikhe）", "description": "千年岩石开凿洞穴城市，洞穴宫殿、礼拜堂，非常有特色，游览 1.5h，门票约 15 拉里" },
@@ -225,12 +163,7 @@
       "accommodation": "库塔伊西"
     },
     {
-      "day": 5,
-      "date": "2026-09-28",
-      "weekday": "周一",
-      "title": "库塔伊西 → 梅斯蒂亚",
-      "locations": "梅斯蒂亚",
-      "summary": "移动日 · 自驾约 6h · 进入斯瓦涅季",
+      "day": 5, "date": "2026-09-28", "weekday": "周一", "title": "库塔伊西 → 梅斯蒂亚", "locations": "梅斯蒂亚", "summary": "移动日 · 自驾约 6h · 进入斯瓦涅季",
       "schedule": [
         { "id": "d5s1", "time": "全天", "type": "drive", "text": "一路向西进入斯瓦涅季山区，沿途慢慢欣赏雪山、古石塔村落风光，看到好看的地方可以随时停车拍照" },
         { "id": "d5s2", "time": "抵达", "type": "rest", "text": "梅斯蒂亚小镇超市采购：徒步零食、饮用水、简易补给" }
@@ -243,12 +176,7 @@
       "accommodation": "梅斯蒂亚"
     },
     {
-      "day": 6,
-      "date": "2026-09-29",
-      "weekday": "周二",
-      "title": "梅斯蒂亚 · Koruldi 冰湖徒步",
-      "locations": "Koruldi 科鲁迪湖",
-      "summary": "13km · 爬升+600m · 最高2740m · 6–8h",
+      "day": 6, "date": "2026-09-29", "weekday": "周二", "title": "梅斯蒂亚 · Koruldi 冰湖徒步", "locations": "Koruldi 科鲁迪湖", "summary": "13km · 爬升+600m · 最高2740m · 6–8h",
       "schedule": [
         { "id": "d6s1", "time": "车程", "type": "drive", "text": "梅斯蒂亚 ↔ Cross 十字架，单程 30–35min；徒步起点需要单独租当地四驱车抵达" },
         { "id": "d6s2", "time": "全天", "type": "hike", "text": "Koruldi 科鲁迪湖徒步往返", "description": "梅斯蒂亚招牌徒步线；全程往返 13km，爬升 600m，最高海拔 2740m。高山湖泊群，直面高加索雪山群峰；全程 6–8h" }
@@ -261,12 +189,7 @@
       "accommodation": "梅斯蒂亚"
     },
     {
-      "day": 7,
-      "date": "2026-09-30",
-      "weekday": "周三",
-      "title": "梅斯蒂亚 → 乌树故里",
-      "locations": "Chalaadi冰川、乌树故里",
-      "summary": "冰川徒步 + 移动 · 沿途4座古村落",
+      "day": 7, "date": "2026-09-30", "weekday": "周三", "title": "梅斯蒂亚 → 乌树故里", "locations": "Chalaadi冰川、乌树故里", "summary": "冰川徒步 + 移动 · 沿途4座古村落",
       "schedule": [
         { "id": "d7s1", "time": "上午", "type": "hike", "text": "Chalaadi 查拉迪冰川徒步（2h）", "description": "轻松短途徒步，可以近距离走到冰川末端，冰碛石、冰裂缝景观" },
         { "id": "d7s2", "time": "下午", "type": "drive", "text": "梅斯蒂亚自驾前往乌树故里（经 chali bridge）", "description": "沿途经过 4 座斯瓦涅季古村落，雪山+中世纪石塔景观，随停拍照" },
@@ -281,12 +204,7 @@
       "accommodation": "Guesthouse NaSHOGOBI · 115拉里（现金）"
     },
     {
-      "day": 8,
-      "date": "2026-10-01",
-      "weekday": "周四",
-      "title": "乌树故里 → 第比利斯",
-      "locations": "第比利斯",
-      "summary": "移动日 · 约460km · 8–9h",
+      "day": 8, "date": "2026-10-01", "weekday": "周四", "title": "乌树故里 → 第比利斯", "locations": "第比利斯", "summary": "移动日 · 约460km · 8–9h",
       "schedule": [
         { "id": "d8s1", "time": "全天", "type": "drive", "text": "超长距离赶路，早点出发，中途小镇停靠补给" }
       ],
@@ -298,12 +216,7 @@
       "accommodation": "第比利斯"
     },
     {
-      "day": 9,
-      "date": "2026-10-02",
-      "weekday": "周五",
-      "title": "西格纳吉红酒小镇一日游",
-      "locations": "西格纳吉",
-      "summary": "Klook 一日往返团",
+      "day": 9, "date": "2026-10-02", "weekday": "周五", "title": "西格纳吉红酒小镇一日游", "locations": "西格纳吉", "summary": "Klook 一日往返团",
       "schedule": [
         { "id": "d9s1", "time": "全天", "type": "attraction", "text": "Bodbe 圣妮诺女修道院", "description": "格鲁吉亚重要圣地", "warning": "⚠️ 硬性要求：女生必须头巾+长裙，门口可以租借，遵守宗教礼仪" },
         { "id": "d9s2", "time": "全天", "type": "attraction", "text": "西格纳吉红酒小镇", "description": "红墙童话小镇，格鲁吉亚红酒发源地，卡卡赫蒂陶罐红酒产区" }
@@ -316,12 +229,7 @@
       "accommodation": "Holiday Inn Express Tbilisi Avlabari · $100.32（已付）"
     },
     {
-      "day": 10,
-      "date": "2026-10-03",
-      "weekday": "周六",
-      "title": "第比利斯 · 博物馆+美术馆",
-      "locations": "第比利斯",
-      "summary": "市内 Bolt 打车",
+      "day": 10, "date": "2026-10-03", "weekday": "周六", "title": "第比利斯 · 博物馆+美术馆", "locations": "第比利斯", "summary": "市内 Bolt 打车",
       "schedule": [
         { "id": "d10s1", "time": "10:00", "type": "attraction", "text": "西蒙·贾纳西亚格鲁吉亚博物馆", "description": "格鲁吉亚国家历史博物馆，藏大量本土文物", "hours": "10:00–18:00" },
         { "id": "d10s2", "time": "下午", "type": "attraction", "text": "乔治亚国家美术馆（蓝画廊）", "description": "本土艺术画作", "hours": "10:00–18:00" },
@@ -335,12 +243,7 @@
       "accommodation": "Holiday Inn Express Tbilisi Avlabari · 第比利斯"
     },
     {
-      "day": 11,
-      "date": "2026-10-04",
-      "weekday": "周日",
-      "title": "第比利斯 → 返程",
-      "locations": "第比利斯",
-      "summary": "EK2201 16:35 起飞",
+      "day": 11, "date": "2026-10-04", "weekday": "周日", "title": "第比利斯 → 返程", "locations": "第比利斯", "summary": "EK2201 16:35 起飞",
       "schedule": [
         { "id": "d11s1", "time": "14:00", "type": "note", "text": "建议到达第比利斯机场（市区到机场车程约 30min）" },
         { "id": "d11s2", "time": "16:35", "type": "flight", "text": "EK2201 起飞 · 第比利斯 → 迪拜 → 杭州" }
